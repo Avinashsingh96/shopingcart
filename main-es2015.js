@@ -45,7 +45,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>bookstore-app works!</p>\n\n    <div class=\"form-group justify-content-centerb\">\n        <input type=\"text\" placeholder=\"BookStoreApp\" class=\"form-control w-50 text-center bg-dark\">\n        <input type=\"text\" placeholder=\"bookname\" class=\"w-50 form-control\"[(ngModel)]=\"bookname\">\n        <input type=\"text\" placeholder=\"isbnno\" class=\"w-50 form-control\" [(ngModel)]=\"isbn\">\n        <input type=\"text\" placeholder=\"Author name\" class=\"w-50 form-control\"[(ngModel)]=\"authorname\">\n        <button class=\"btn btn-info w-50\" (click)=\"addbook()\">add book</button><br>\n        \n    </div>\n\n<div>\n      <table class=\"table\">\n          <thead class=\"thead-dark text-center\">\n              <th>bookid</th>\n              <th>bookname</th>\n              <th>ISBN no</th>\n              <th>AuthorName</th>\n              <th>action</th>\n         </thead>\n         <tbody class=\"text-center\">\n             <tr *ngFor=\"let book of library\" let i=index;>\n             <td>{{book.BookId}}</td>\n             <td>{{book.BookName}}</td>\n             <td>{{book.Isbn}}</td>\n             <td>{{book.AuthorName}}</td>\n             <button class=\"btn btn-danger\" (click)=\"deleteBook(i)\">delete</button>\n             </tr>\n         </tbody>\n         \n      </table>\n</div>   ");
+/* harmony default export */ __webpack_exports__["default"] = ("<h3 style=\"background-color: teal;text-align: center;padding:20px;\">Welcome to my book store</h3>\n\n    <section class=\"form-group\" style=\"margin-left:350px;\">\n        <input type=\"text\" placeholder=\"BookStoreApp\" class=\"form-control w-50 text-center bg-dark\">\n        <input type=\"text\" placeholder=\"bookname\" class=\"w-50 form-control\"[(ngModel)]=\"bookname\">\n        <input type=\"text\" placeholder=\"isbnno\" class=\"w-50 form-control\" [(ngModel)]=\"isbn\">\n        <input type=\"text\" placeholder=\"Author name\" class=\"w-50 form-control\"[(ngModel)]=\"authorname\">\n        <button class=\"btn btn-info w-50\" (click)=\"addbook()\">add book</button><br>\n        \n    </section>\n\n<div>\n      <table class=\"table\">\n          <thead class=\"thead-dark text-center\">\n              <th>bookid</th>\n              <th>bookname</th>\n              <th>ISBN no</th>\n              <th>AuthorName</th>\n              <th>action</th>\n         </thead>\n         <tbody class=\"text-center\">\n             <tr *ngFor=\"let book of library\" let i=index;>\n             <td>{{book.BookId}}</td>\n             <td>{{book.BookName}}</td>\n             <td>{{book.Isbn}}</td>\n             <td>{{book.AuthorName}}</td>\n             <button class=\"btn btn-danger\" (click)=\"deleteBook(i)\">delete</button>\n             </tr>\n         </tbody>\n         \n      </table>\n</div>   ");
 
 /***/ }),
 
@@ -731,7 +731,7 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"]
         ],
         providers: [_captcha_service__WEBPACK_IMPORTED_MODULE_20__["CaptchaService"], _data_service__WEBPACK_IMPORTED_MODULE_9__["DataService"]],
-        bootstrap: [_placement_placement_component__WEBPACK_IMPORTED_MODULE_30__["PlacementComponent"]]
+        bootstrap: [_bookstore_app_bookstore_app_component__WEBPACK_IMPORTED_MODULE_8__["BookstoreAppComponent"]]
     })
 ], AppModule);
 
